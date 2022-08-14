@@ -249,3 +249,66 @@ if (height) {
 
 // EQUALITY OPERATORS == vs. ===
 //-------------------------------
+
+// = assignment
+// == loose assignment, it does type coercion
+// === strict assignment, does NOT perform type coercion, must be EXACTLY the same value
+/*
+let age = 18;
+if (age === 18) console.log(`You just became an adult! (strict)`)
+if (age == 18) console.log(`You just became an adult! (loose)`)
+
+
+age = '18';
+if (age === 18) console.log(`You just became an adult! (strict)`)
+if (age == 18) console.log(`You just became an adult! (loose)`)
+
+
+let favorite = Number(prompt(`What's your favorite number?`))
+console.log(favorite)
+console.log(typeof favorite)
+
+if (favorite === 23) { 
+  console.log(`Cool! 23 is an amazing number!`)
+} else if (favorite === 7) {
+  console.log(`7 is also a cool number`)
+} else if (favorite === 9) {
+  console.log(`9 is also a cool number`)
+} else {
+  console.log(`Number is not 23 or 7 or 9`)
+}
+
+if (favorite !== 23) console.log(`Why not 23?`)
+// != loose
+// !== strict
+// the '!' takes the place of the first '='
+*/
+
+
+// LOGICAL OPERATORS
+//-------------------------------
+/*
+const hasDriversLicense = true; // variable A
+const hasGoodVision = true; // variable B
+// 'and' operator is &&; 'or' operator is ||
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense)
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+
+if (shouldDrive) {
+  console.log(`Sarah is able to drive!`)
+} else {
+  console.log(`Someone else should drive...`)
+}
+
+const isTired = false; // variable C
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+  console.log(`Sarah is able to drive!`)
+} else {
+  console.log(`Someone else should drive...`)
+}
+*/
